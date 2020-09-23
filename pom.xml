@@ -26,7 +26,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifestEntries>
-                            <Premain-Class>JitWarmUpAgent</Premain-Class>
+                            <Premain-Class>chiroito.sample.agent.JitWarmUpAgent</Premain-Class>
                         </manifestEntries>
                     </archive>
                     <appendAssemblyId>false</appendAssemblyId>

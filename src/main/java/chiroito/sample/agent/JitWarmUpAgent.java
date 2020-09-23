@@ -1,3 +1,6 @@
+package chiroito.sample.agent;
+
+import chiroito.sample.impl.JitWarmUpMXBeanImpl;
 import jdk.jfr.consumer.RecordedEvent;
 import jdk.jfr.consumer.RecordingStream;
 
@@ -54,7 +57,7 @@ public class JitWarmUpAgent {
                         if (!isClosed) {
                             synchronized (recordingStream) {
                                 if (!isClosed) {
-                                    System.out.println("コンパイルレベル " + expectCompileLevel + "で閾値を超える数の " + methodNum + " メソッドがコンパイルされました");
+                                    System.out.println("コンパイルレベル " + expectCompileLevel + " で閾値を超える数の " + methodNum + " メソッドがコンパイルされました");
                                     mxbean.warmedUp();
                                     recordingStream.close();
                                     isClosed = true;

@@ -1,4 +1,8 @@
-public class JitWarmUpMXBeanImpl implements JitWarmUpMXBean{
+package chiroito.sample.impl;
+
+import chiroito.sample.JitWarmUpMXBean;
+
+public class JitWarmUpMXBeanImpl implements JitWarmUpMXBean {
 
     private volatile boolean isWarmedUp = false;
 
